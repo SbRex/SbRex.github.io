@@ -1,2 +1,2 @@
 # SbRex.github.io
-Sbrex ersonal webpage
+Sbrex personal webpage
