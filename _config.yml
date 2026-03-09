@@ -21,11 +21,11 @@
 title: UDE
 email: dldk@hotmail.it
 description: >- # this means to ignore newlines until "baseurl:"
-  Unfortunate digital Experiences
+  Unfortunate Digital Experiences
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: sprepps
+github_username:  sbrex
 
 # Build settings
 theme: minima

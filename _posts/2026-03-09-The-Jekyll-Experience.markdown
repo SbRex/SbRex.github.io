@@ -39,6 +39,8 @@ Finally to launch the local server:
 ```bundle exec jekyll serve```
 I receive quite some "Deprecation Warning" during this process but going to <http://localhost:4000/> or <http://127.0.0.1:4000/> shows me the correct page so everything went trough.
 
+I repeated the process on my windows PC cause I hate myself(tried using wsl but that case you need to copy the repository in the wsl filesystem and I did not need the stress involving to learn how the fuck GitHub Desktop would have handled that, maybe someday I will try again and write a stupid article like this one). I ended up installing Ruby and just repeat the process above.
+
 ### Hands-on the Jekyll enviroment and fixing my stupidity
 it's possible to customize the "website" editing the ```_config.yml``` file (needs to restart the service to update, creating or editing posts does not require to restart the service).
 The posts are stored inside the ```_posts/``` folder and they MUST follow the naming system ```AAAA-MM-DD-title.md or .markdown```.
@@ -48,7 +50,29 @@ So I edited the local folder, cloned the original again and then pasted inside t
 If I go in <https://sbrex.github.io/> the website is correctly showed.
 Is it the right way? I don't know. Is elegant? No. Do I even care? Absolutely not, it works.
 
+
+
 ### Customizing the theme
 I choose Jekyll to don't have to fuck with too many options or configuration so it's sweet it comes with many themes. 
 A quick search showed me [Jekyll Themes(free)](https://jekyllthemes.io/free) and [JAMstack Themes](https://jamstackthemes.dev/ssg/jekyll/).
 Jekyll lets us handle theme as Gem so we don't have to manage the theme files. I found a nice theme called chalupa. It has 3 way of installing, one of them is the gem-based.
+The guide tells you to "Add the following to your Gemfile" not knowing that I am a shithead and I don't even know what the fuck does it means. After a brief research I understood there is a file in your jekyll directory call, you'll never fucking guess... Gemfile, just Gemfile.
+Opening this you can add ```gem "chulapa-jekyll"``` and delete or comment the previous gem string(mine was ```gem "minima", "~> 2.5"```).
+Then using the terminal just enter ```bundle```. This will fetch and install what is still needed.
+In the future the command to use will be ```bundle install```.
+I can see by the end of the lines these ones:
+```
+Fetching jekyll-github-metadata 2.16.1
+Installing jekyll-github-metadata 2.16.1
+Fetching chulapa-jekyll 2.0.1
+Installing chulapa-jekyll 2.0.
+```
+Very nice.
+You can now set the theme in the _config.yml file ```theme: chulapa-jekyll```
+Now unfortunately, only at this point I discover the config file has a fuckton of options/strings to change. I did my best but I can't explain in detail, it's a long process where you set the options you use and comment the others.
+
+After hours trying to understand why the index is blank I decided this fucking plugin is not worth any more headaches.
+I will try with a little patience to customize the website myself.
+
+See you soon for other mishaps
+-Sbrex
