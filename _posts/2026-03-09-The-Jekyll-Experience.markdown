@@ -51,4 +51,4 @@ Is it the right way? I don't know. Is elegant? No. Do I even care? Absolutely no
 ### Customizing the theme
 I choose Jekyll to don't have to fuck with too many options or configuration so it's sweet it comes with many themes. 
 A quick search showed me [Jekyll Themes(free)](https://jekyllthemes.io/free) and [JAMstack Themes](https://jamstackthemes.dev/ssg/jekyll/).
-I ended choosing
+Jekyll lets us handle theme as Gem so we don't have to manage the theme files. I found a nice theme called chalupa. It has 3 way of installing, one of them is the gem-based.
