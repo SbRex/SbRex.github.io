@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "The Jekyll Experience!"
 date:   2026-03-09 12:09:00 +0100
 categories: jekyll update

@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: single
 title:  "Theme for Jekyll"
-date:   2026-03-09 12:09:00 +0100
+date:   2026-03-12 12:09:00 +0100
 categories: jekyll update
+toc: true
 ---
 Hi. I did not surrender, I want to change theme for my Jekyll website. I found out there are few "basic" themes, somewhat "default" with Jekyll. 
 
